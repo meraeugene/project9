@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap");
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "League Spartan", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+body .container {
+  max-width: 1000px;
+  width: 100%;
+}
+body .container .flex-top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6.5em;
+  margin-bottom: 2em;
+}
+body .container .flex-top .info {
+  width: 40%;
+}
+body .container .flex-top .info .title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: hsl(300deg, 43%, 22%);
+  margin-bottom: 0.5em;
+}
+body .container .flex-top .info .desc {
+  font-size: 1rem;
+  line-height: 1.2;
+  color: hsl(300deg, 43%, 22%);
+}
+body .container .flex-top .ratings .rating-1,
+body .container .flex-top .ratings .rating-2,
+body .container .flex-top .ratings .rating-3 {
+  display: flex;
+  align-items: center;
+  background-color: hsl(300deg, 24%, 96%);
+  margin-bottom: 0.7em;
+  border-radius: 7px;
+  gap: 1.5em;
+}
+body .container .flex-top .ratings .rating-1 {
+  max-width: 400px;
+  width: 100%;
+  height: 50px;
+  padding: 0 1em;
+}
+body .container .flex-top .ratings .rating-2 {
+  margin-left: 2.5em;
+  max-width: 410px;
+  width: 100%;
+  height: 50px;
+  padding: 0 1em;
+}
+body .container .flex-top .ratings .rating-3 {
+  margin-left: 5em;
+  max-width: 410px;
+  width: 100%;
+  height: 50px;
+  padding: 0 1em;
+}
+body .container .flex-bot {
+  display: flex;
+  align-items: center;
+  gap: 1.5em;
+}
+body .container .flex-bot .card-1,
+body .container .flex-bot .card-2,
+body .container .flex-bot .card-3 {
+  background-color: hsl(300deg, 43%, 22%);
+  color: hsl(0deg, 0%, 100%);
+  border-radius: 8px;
+  padding: 2em 1.5em;
+}
+body .container .flex-bot .card-1 .flex-profile,
+body .container .flex-bot .card-2 .flex-profile,
+body .container .flex-bot .card-3 .flex-profile {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  margin-bottom: 1.5em;
+}
+body .container .flex-bot .card-1 .flex-profile .img,
+body .container .flex-bot .card-2 .flex-profile .img,
+body .container .flex-bot .card-3 .flex-profile .img {
+  border-radius: 50%;
+  max-width: 40px;
+  width: 100%;
+}
+body .container .flex-bot .card-1 .flex-profile .name-info,
+body .container .flex-bot .card-2 .flex-profile .name-info,
+body .container .flex-bot .card-3 .flex-profile .name-info {
+  line-height: 1.2;
+}
+body .container .flex-bot .card-1 .flex-profile .name-info .name,
+body .container .flex-bot .card-2 .flex-profile .name-info .name,
+body .container .flex-bot .card-3 .flex-profile .name-info .name {
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+body .container .flex-bot .card-1 .flex-profile .name-info .info,
+body .container .flex-bot .card-2 .flex-profile .name-info .info,
+body .container .flex-bot .card-3 .flex-profile .name-info .info {
+  color: hsl(333deg, 80%, 67%);
+  font-weight: 400;
+  font-size: 1rem;
+}
+body .container .flex-bot .card-1 .sayings,
+body .container .flex-bot .card-2 .sayings,
+body .container .flex-bot .card-3 .sayings {
+  line-height: 1.2;
+}
+body .container .flex-bot .card-1 .sayings .desc,
+body .container .flex-bot .card-2 .sayings .desc,
+body .container .flex-bot .card-3 .sayings .desc {
+  font-weight: 400;
+}
+body .container .flex-bot .card-2 {
+  margin-top: 2em;
+}
+body .container .flex-bot .card-3 {
+  margin-top: 4em;
+}
+
+@media (min-width: 200px) and (max-width: 900px) {
+  body {
+    padding: 2em 1em;
+  }
+  body .container {
+    padding: 2em 1em;
+  }
+  body .container .flex-top {
+    flex-direction: column;
+    gap: 2.5em;
+    margin-bottom: 2em;
+  }
+  body .container .flex-top .info {
+    width: 100%;
+  }
+  body .container .flex-top .info .title {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  body .container .flex-top .info .desc {
+    text-align: center;
+    font-size: 1.1rem;
+  }
+  body .container .flex-top .ratings .rating-1,
+body .container .flex-top .ratings .rating-2,
+body .container .flex-top .ratings .rating-3 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.7em;
+    gap: 0em;
+    flex-direction: column;
+  }
+  body .container .flex-top .ratings .rating-1 .flex-stars,
+body .container .flex-top .ratings .rating-2 .flex-stars,
+body .container .flex-top .ratings .rating-3 .flex-stars {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  body .container .flex-top .ratings .rating-1 {
+    max-width: 325px;
+    height: 70px;
+  }
+  body .container .flex-top .ratings .rating-2 {
+    margin-left: 0em;
+    max-width: 325px;
+    height: 70px;
+  }
+  body .container .flex-top .ratings .rating-3 {
+    margin-left: 0em;
+    max-width: 325px;
+    height: 70px;
+  }
+  body .container .flex-bot {
+    flex-direction: column;
+  }
+  body .container .flex-bot .card-2 {
+    margin-top: 0;
+  }
+  body .container .flex-bot .card-3 {
+    margin-top: 0;
+  }
+}/*# sourceMappingURL=styles.css.map */
